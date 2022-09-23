@@ -1,6 +1,6 @@
-
 mysql
 mysql.connector
 Flask
 Flask-Cors
 Pandas
+gunicorn
