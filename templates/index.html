@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="font-size:40px" >Weekly Scorecard</h1>
+
+    <div class="form">
+        <form action="/abc" method="POST">
+           <label style="font-size:35px" for="fname">MMID</label>
+           <input style="font-size:25px" type="text" name="MMID"><br><br>
+            <input style="font-size:20px" type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+{% endblock %}

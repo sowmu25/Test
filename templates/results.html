@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ScoreCard of the week </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">Scorecard of the week</div>
+
+   <table class="table table-striped" cellspacing="0" style="width:100%">
+       <thead>
+       <tr>
+          <th> </th>
+         <th> </th>
+         <th> </th>
+
+   </table>
+</div>
+ <table class="table table-striped" cellspacing="0" style="width:100%">
+
+            <tr>
+                {% for col in columns %}
+                    <th>{{ col }}</th>
+                {% endfor %}
+
+             </tr>
+        </thead>
+        <tbody>
+                   {% if data1 is not none %}
+            {% for data2 in data1 %}
+            <tr>
+                {% for data3 in data2 %}
+                    <td>{{ data3 }}</td>
+                {% endfor %}
+
+
+            {% endfor %}
+            {% endif %}
+        </tbody>
+      </table>
+   </div>
+</body>
+</html>
