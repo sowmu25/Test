@@ -48,4 +48,4 @@ def scorecard():
 #     return jsonify(my_result)
 
 if __name__ == '__main__':
-    app.run(port=500)
+    app.run(debug=True)
