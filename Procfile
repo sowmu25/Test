@@ -1,1 +1,1 @@
-web: python reviews.py
+web: python app.py
